@@ -71,13 +71,16 @@ const Block = () => {
       <div className="  h-full flex items-center justify-center lg:w-[180px] lg:px-1 px-5 ">
         {auth ? (
           <p
-            className=" font-bold cursor-pointer p-2 border border-gray-300"
+            className=" font-bold cursor-pointer p-4 border border-gray-100"
             onClick={handleLogout}
           >
             Logout
           </p>
         ) : (
-          <Link className=" font-bold border border-gray-300" href={"/login"}>
+          <Link
+            className=" font-bold border p-4 border-gray-100"
+            href={"/login"}
+          >
             SignUp
           </Link>
         )}
