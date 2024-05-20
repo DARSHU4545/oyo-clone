@@ -6,6 +6,6 @@ export default async function handler(req, res) {
     connectDb();
     const key = req.query.val;
     const hotels = await Hotel.find({ "facilities.name": { $in: key } });
-    res.json({ msg: "good", hotels });
+    return res.json({ msg: "good", hotels });
   }
 }

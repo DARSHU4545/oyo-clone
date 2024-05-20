@@ -5,6 +5,6 @@ export default async function handler(req, res) {
   connectDb();
   if (req.method === "GET") {
     const facilities = await Hotel.find({}).distinct("facilities.name");
-    res.json({ msg: "good", facilities });
+    return res.json({ msg: "good", facilities });
   }
 }
