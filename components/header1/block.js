@@ -25,22 +25,22 @@ const Block = () => {
   };
   const blocks = [
     {
-      img: "/demo.svg",
+      img: "https://cdn-icons-png.flaticon.com/128/1357/1357616.png",
       tittle: "Become a Member",
       dis: "Additional 10% off an Stay",
     },
     {
-      img: "/demo.svg",
+      img: "https://cdn-icons-png.flaticon.com/128/3135/3135727.png",
       tittle: "OYO for Business",
       dis: "Trusted by 5000 Corporates",
     },
     {
-      img: "/demo.svg",
+      img: "https://cdn-icons-png.flaticon.com/128/602/602175.png",
       tittle: "List your Property",
       dis: "Start earning in 30 mins",
     },
     {
-      img: "/demo.svg",
+      img: "https://cdn-icons-png.flaticon.com/128/1538/1538493.png",
       tittle: "965-56464",
       dis: "Call us to Book now",
     },
@@ -70,11 +70,14 @@ const Block = () => {
       })}
       <div className="  h-full flex items-center justify-center lg:w-[180px] lg:px-1 px-5 ">
         {auth ? (
-          <p className=" font-bold cursor-pointer" onClick={handleLogout}>
+          <p
+            className=" font-bold cursor-pointer p-2 border border-gray-300"
+            onClick={handleLogout}
+          >
             Logout
           </p>
         ) : (
-          <Link className=" font-bold" href={"/login"}>
+          <Link className=" font-bold border border-gray-300" href={"/login"}>
             SignUp
           </Link>
         )}
