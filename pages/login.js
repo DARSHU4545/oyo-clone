@@ -142,7 +142,7 @@ const Login = () => {
           Sign up & Get ₹500 OYO Money
         </p>
         <div className="px-10 flex flex-col gap-6">
-          <h3 className=" text-2xl font-bold mt-5 ">Login / Signup</h3>
+          <h3 className=" text-2xl font-bold mt-4 ">Login / Signup</h3>
           <p className=" font-bold text-sm mb-1">
             Please enter your phone number to continue
           </p>
