@@ -11,17 +11,17 @@ const Header4 = () => {
         width={300}
         height={300}
         priority={true} // {false} | {true}
-        className=" w-[95vw] h-[250px] mt-5 m-auto"
+        className=" md:w-[95vw] w-full h-[250px] mt-5 md:m-auto"
       />
       <Image
         src={"/banner2.avif"}
         alt="img"
         width={300}
         height={300}
-        className=" md:w-[95vw] w-full h-[170px] my-10 m-auto"
+        className=" md:w-[95vw] w-full h-[170px] my-10 md:m-auto"
       />
       <div className="flex justify-between items-center my-12 border-2 rounded-lg border-gray-300 lg:px-5 lg:w-[90vw] w-full  m-auto h-[100px]">
-        <div className="flex items-center">
+        <div className="md:flex items-center hidden ">
           <Image
             src={"/fire.jpg"}
             alt="fire"
@@ -39,12 +39,13 @@ const Header4 = () => {
         <div className="flex px-2">
           <input
             type="email"
-            className="px-6 py-3 rounded-lg mr-5 md:w-80 w-43 h-12 outline-none border border-gray-300"
+            className="px-6 py-3 rounded-lg mr-5 md:w-80 w-[200px] h-12 outline-none border border-gray-300"
             placeholder="e.g. john@gmail.com"
           />
           <button
             type="submit"
-            className=" lg:w-48 w-32 rounded-lg h-12 bg-red-500 text-xl text-white cursor-pointer "
+            className=" lg:w-48 w-[100px] rounded-lg h-12 bg-red-500 md:text-xl text-sm text-white 
+             font-bold cursor-pointer "
           >
             Notify
           </button>

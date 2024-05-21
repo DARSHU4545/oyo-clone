@@ -16,7 +16,7 @@ const Hotel = ({ hotel }) => {
             className="lg:w-[65vw] h-full w-full"
           />
         </div>
-        <div className="flex lg:flex-col mt-5 lg:mt-0  gap-8">
+        <div className="flex lg:flex-col mt-5 lg:mt-0  gap-3">
           {hotel
             ? hotel.gallery?.map((ele) => {
                 return (
@@ -26,7 +26,7 @@ const Hotel = ({ hotel }) => {
                     alt="hotel"
                     width={200}
                     height={200}
-                    className=" lg:w-[200px] lg:h-16 object-cover w-20 h-10 cursor-pointer"
+                    className=" lg:w-[200px] lg:h-16 object-cover w-[90px] h-10 cursor-pointer"
                     onClick={() => {
                       setChangeImg(ele);
                     }}
@@ -43,16 +43,16 @@ const Hotel = ({ hotel }) => {
             {hotel?.description}
           </p>
           <div className=" text-2xl lg:my-5 my-0 lg:block flex items-center ">
-            <span className="lg:font-bold lg:px-0 lg:text-2xl  px-3 font-semibold text-lg lg:my-0 my-3">
+            <span className="lg:font-bold lg:px-0 lg:text-2xl  px-3 font-semibold text-[16px] lg:my-0 my-3">
               Facilities :
             </span>
-            <ul className=" flex gap-x-3">
+            <ul className=" flex gap-x-1">
               {hotel
                 ? hotel.facilities?.map((ele) => {
                     return (
                       <li
                         key={ele.name}
-                        className=" lg:mb-3 flex items-center lg:mt-5 cursor-pointer gap-x-3"
+                        className=" lg:mb-3 flex items-center lg:mt-5 cursor-pointer gap-x-1"
                       >
                         <span>
                           <Image
